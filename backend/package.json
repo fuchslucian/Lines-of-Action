@@ -1,12 +1,12 @@
 {
-  "name": "lines-of-action",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index"
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
   },
-   "engines": {
-    "npm": "8.7.0",
-    "node": "14.15.4"
+  "scripts": {
+    "start": "node index.js"
   }
 }
