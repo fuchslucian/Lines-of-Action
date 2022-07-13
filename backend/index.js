@@ -4,11 +4,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 
-//app.use(cors());
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://lines-of-action.vercel.app');
-  next();
-});
+app.use(cors());
 
 const server = http.createServer(app);
 const PORT = process.env.PORT || 3001
