@@ -35,7 +35,7 @@ const Game = (props) => {
     const [selected, setSelected] = useState([-1,-1])
 
     useEffect(() => {
-        socket = io.connect("https://lines-of-action-fuchslucian.herokuapp.com", { });
+        socket = io.connect("https://lines-of-action-fuchslucian.herokuapp.com/");
         socket.emit("join_room", roomCode);
         
     },[])
