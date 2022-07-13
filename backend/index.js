@@ -16,6 +16,7 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
+  console.log("connection")
 
   socket.on("join_room", (roomCode) => {
     socket.join(roomCode);
