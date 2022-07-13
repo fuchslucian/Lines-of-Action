@@ -5,5 +5,9 @@
   "scripts": {
     "start": "node index",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  }
+  },
+   "engines": {
+    "npm": "8.7.0",
+    "node": "14.15.4"
+  },
 }
