@@ -20,4 +20,4 @@ root.render(
       <Route path="Game" element={<Game />} />
     </Routes>
   </BrowserRouter>
-);
+  )
