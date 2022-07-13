@@ -36,7 +36,6 @@ const Game = (props) => {
 
     useEffect(() => {
         socket = io.connect("https://lines-of-action-fuchslucian.herokuapp.com/");
-        console.log("connected")
         socket.emit("join_room", roomCode);
         
     },[])
