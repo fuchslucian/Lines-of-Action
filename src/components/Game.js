@@ -35,7 +35,7 @@ const Game = (props) => {
     const [selected, setSelected] = useState([-1,-1])
 
     useEffect(() => {
-        socket = io.connect("http://localhost:3001");
+        socket = io.connect("https://lineofactionbackend.onrender.com");
         socket.emit("join_room", roomCode);
         
     },[])
